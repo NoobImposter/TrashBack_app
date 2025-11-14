@@ -1,12 +1,12 @@
 import { View, Text } from 'react-native'
 import React from 'react'
 
-const Maketplaceindex = () => {
+const Topbar = () => {
   return (
     <View>
-      <Text>marketplaceIndex</Text>
+      <Text>Topbar</Text>
     </View>
   )
 }
 
-export default Maketplaceindex
+export default Topbar
