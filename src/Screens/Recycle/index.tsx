@@ -9,22 +9,36 @@ import location from "../../Images/Recycle/location.png"
 import { SafeAreaView } from 'react-native-safe-area-context'
 import styels from '../Components/styels'
 import Recents from '../Home/components/Recents'
+import Topbar from '../Components/Topbar'
+
+const Showcontainer=({data})=>{
+  <View>
+    
+  </View>
+
+}
+
+
+
+
 const RecycleIndex = () => {
   const tabdata=[{image:plastic , text:"Plastic"},{image:metal , text:"Metal"},{image:paper , text:"Paper"}]
    const recentsdata = [
-    { date: "19 Feb", material: "2.5kg .25 pts" },
-    { date: "19 Feb ", material: "2.5kg .25 pts" },
+    { date: "19 Feb", material: "Paper . 2.5kg . 25 pts" },
+    { date: "19 Feb ", material: "Paper . 2.5kg . 25 pts" },
     { date: "19 Feb ", material: "5kg . 30 pts" },
-    { date: "19 Feb ", material: "2.5kg .25 pts" },
-    { date: "19 Feb ", material: "2.5kg .25 pts" },
+    { date: "19 Feb ", material: "Paper . 2.5kg . 25 pts" },
+    { date: "19 Feb ", material: "Paper . 2.5kg . 25 pts" },
     { date: "19 Feb ", material: "5kg . 30 pts" }
   ];
   
   return (
     <SafeAreaView style={styels.main}>
       <View style={styels.innermaincontainer}>
+            <View style={{width:"100%",height:"8%"}}>
+        <Topbar textsinput={"Recycle"} />
+        </View>
         <View style={styles.headerBox}>
-                <Text style={styels.headertext}>Recycle</Text>
                 <Text style={[styels.paragraphtext,{flexDirection:"row"}]}>
                   <Image  style={{width:25,height:25, resizeMode:"contain"}} source={location} />
                   Fast Nuces Lahore</Text>
@@ -40,6 +54,8 @@ const RecycleIndex = () => {
       </View>
     
     <Boxshow  arrayofdata={tabdata}/>
+
+ 
     <View style={styles.recentsContainer}>
           <Text style={[styels.headertext,{fontSize:30}]}>Pickup history</Text>
 

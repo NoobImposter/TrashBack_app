@@ -6,7 +6,6 @@ import Recents from './components/Recents';
 import { ScrollView } from 'react-native';
 import plantimage from "../../Images/Homescreen/plantimage.png";
 import gifticon from "../../Images/Homescreen/gifticn.png"
-
 import recycleicon from "../../Images/Homescreen/recycleicn.png"
 import calendericon from "../../Images/Homescreen/calendericn.png"
 import styels from '../Components/styels';
@@ -56,8 +55,12 @@ const HomeIndex = () => {
       <View style={styels.innermaincontainer}>
 
         {/* Header */}
+        <View style={{width:"100%",height:"8%"}}>
+        <Topbar textsinput={"Hi, Ali 👋"} />
+        </View>
         <View style={styles.headerBox}>
-          <Text style={styles.headerText}>Hi, {username} 👋</Text>
+          
+
           <Text style={styles.pointsText}>{Points} pts</Text>
         </View>
 
@@ -121,6 +124,7 @@ const styles = StyleSheet.create({
 
   headerBox: {
     width: "100%",
+    height:"5%",
     marginBottom: "6%",
   },
   line:{height:"100%",borderRadius:50,backgroundColor:"#6EC173"},

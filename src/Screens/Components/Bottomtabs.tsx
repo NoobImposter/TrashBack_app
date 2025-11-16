@@ -17,8 +17,9 @@ const Bottomtabs = () => {
         tabBarActiveTintColor:"#606c38",
         
         tabBarShowLabel: true,
-
-
+        tabBarStyle:{
+          height:"6%"
+        },
         tabBarIcon: () => {
           let icon;
 
