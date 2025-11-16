@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/Assets/Fonts/BoldFont.ttf",
+      "sha1": "f467a482e8c829bdc995c656456515d250a7c9bb"
+    },
+    {
+      "path": "src/Assets/Fonts/Regularfont.ttf",
+      "sha1": "de920b2b54dd7007614d9037f9b944159044abf6"
+    }
+  ]
+}
