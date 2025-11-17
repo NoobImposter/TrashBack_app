@@ -4,6 +4,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import styels from '../Components/styels';
 import Topbar from '../Components/Topbar';
 
+import Resturants from './Components/Resturants';
+
 const PointsIndex = () => {
   const [points, stepoints] = useState(0);
   const [cash, setcash] = useState(0);
@@ -72,13 +74,14 @@ const PointsIndex = () => {
               </View>
             </View>
           </View>
-
+         
             <Text style={styels.headertext}>Feratured Resturants</Text>
             <ScrollView
             horizontal={true}
             showsHorizontalScrollIndicator={false}
-            contentContainerStyle={{ paddingHorizontal: 5 }}
+            contentContainerStyle={{width:"100%",height:"30%", paddingHorizontal: 5 }}
             >
+              <Resturants />
 
               
 
@@ -86,6 +89,8 @@ const PointsIndex = () => {
               
              
             </ScrollView>
+      
+            
 
 
     

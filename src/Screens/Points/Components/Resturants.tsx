@@ -3,7 +3,7 @@ import React from 'react'
 
 const Resturants = () => {
   return (
-    <View>
+    <View style={{flex:1,backgroundColor:"blue",borderRadius:20}}>
       <Text>Resturants</Text>
     </View>
   )
