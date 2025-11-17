@@ -11,6 +11,6 @@ export default StyleSheet.create({
     padding: "3%",
     backgroundColor: "white"
     },
-    headertext:{fontFamily:"BoldFont",fontSize:35},
+    headertext:{fontFamily:"BoldFont",fontSize:35,shadowOpacity:15},
     paragraphtext:{ fontFamily:"Regularfont",fontSize:20}
 })
