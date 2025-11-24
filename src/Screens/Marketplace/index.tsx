@@ -4,11 +4,12 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import styels from '../Components/styels'
 import Topbar from '../Components/Topbar'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faMagnifyingGlass,faLocationCrosshairs,faMobile,faBook } from '@fortawesome/free-solid-svg-icons';
+import { faMagnifyingGlass,faLocationCrosshairs,faMobile,faBook,faShirt
+  ,faHouse,faCarBattery
+  ,faShoePrints} from '@fortawesome/free-solid-svg-icons';
 import { FlatList } from 'react-native'
 import Ad from './Components/Ad'
 import Categories from './Components/Categories'
-
 
 
 
@@ -17,14 +18,19 @@ const Maketplaceindex = () => {
   const Sections = [
   { id: '1', title: 'Categories', items: [{categoryname:"Phones",image:faMobile},
     {categoryname:"Books",image:faBook},
-    {categoryname:"Phones",image:faMobile},
-    {categoryname:"Phones",image:faMobile},
-
-
-
-  ], component: Ad },
-  { id: '2', title: 'Mobile Phones', items: Array.from({ length: 6 }, (_, i) => i),component: Ad   },
-  { id: '3', title: 'Third Section', items: Array.from({ length:  6}, (_, i) => i), component: Ad },
+    {categoryname:"Clothes",image:faShirt},
+    {categoryname:"Home Decor",image:faHouse},
+    {categoryname:"Spare Parts",image:faCarBattery},], component: Ad },
+  { id: '2', title: 'Latest', items:  [{categoryname:"Phones",image:faMobile,date:"4 days ago",price:150},
+    {categoryname:"Books",image:faBook,date:"4 days ago",price:200},
+    {categoryname:"Phones",image:faMobile,date:"4 days ago",price:150},
+    {categoryname:"Books",image:faBook,date:"4 days ago",price:200},
+    {categoryname:"Phones",image:faMobile,date:"4 days ago",price:150},
+    {categoryname:"Books",image:faBook,date:"4 days ago",price:200}
+  
+  
+  ],component: Categories   },
+  { id: '3', title: 'Recently Viewed', items: Array.from({ length:  6}, (_, i) => i), component: Categories },
   
 ];
   
@@ -63,7 +69,7 @@ const Maketplaceindex = () => {
                 Sections.map((section)=>{
                   const Rendercomponent=section.component
                   return(
-                    <View key={section.id}>
+                    <View style={{marginTop:"4%"}} key={section.id}>
                       <Text style={styels.headertext}>{section.title}</Text>
                       <FlatList
                     data={section.items}

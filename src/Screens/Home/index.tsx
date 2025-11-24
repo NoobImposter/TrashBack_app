@@ -48,7 +48,7 @@ const HomeIndex = () => {
     { date: "19 Feb 2025", material: "Paper" },
     { date: "19 Feb 2025", material: "Steel" }
   ];
-  const tabdat=[{image:calendericon,text:"Schedule Pickup"},{image:recycleicon,text:"Recycle Guide"},{image:gifticon,text:"Reedeem Points"}]
+  const tabdat=[{image:calendericon,text:"Leader board"},{image:recycleicon,text:"Recycle Guide"},{image:gifticon,text:"Reedeem Points"}]
 
   return (
     <SafeAreaView style={styels.main}>

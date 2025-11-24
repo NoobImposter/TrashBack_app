@@ -8,7 +8,7 @@ const Topbar = ({textsinput}) => {
   return (
     <SafeAreaView
     style={[styels.main,{padding:"0%"}]}>
-    <View style={[styels.innermaincontainer,{padding:"0%",flexDirection:"row",justifyContent:"space-between"}]}>
+    <View style={[styels.innermaincontainer,{padding:"0%",flexDirection:"row",justifyContent:"space-between",alignItems:"center"}]}>
       <Text style={[styels.headertext,{fontSize:45}]}>{textsinput}</Text>
       <Pressable onPress={()=>{console.log({textsinput});
       }}>
