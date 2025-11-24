@@ -4,11 +4,11 @@ import React from 'react'
 
 export default StyleSheet.create({
     main:{
-        flex: 1 ,padding:"10%",backgroundColor:"#fff"
+        flex: 1 ,padding:3,backgroundColor:"#fff"
     },
     innermaincontainer:{
          flex: 1,
-    padding: "3%",
+    padding:3,
     backgroundColor: "white"
     },
     headertext:{fontFamily:"BoldFont",fontSize:35,shadowOpacity:15},
