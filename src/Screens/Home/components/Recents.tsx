@@ -13,7 +13,7 @@ const Recents = ({date,material}) => {
     <View style={{padding:"2%",flexDirection:"row", alignItems:"flex-start",
     width:swidth*0.95,height:sHieght*0.13, gap:"15",}}>
       <View style={{backgroundColor:"#ffffffff",borderRadius:"100%"
-        ,height:"100%",width:"30%"}}>
+        ,height:"100%",width:"20%"}}>
             <Image source={recycleimage}  style={{resizeMode:"contain", width: "100%", height: "100%" }} />
         </View>
       <View style={{flexDirection:"column",height:"100%",width:"70%",justifyContent:"center"}}>
