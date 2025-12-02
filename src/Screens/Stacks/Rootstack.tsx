@@ -5,8 +5,10 @@ import HomeIndex from '../Home';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Bottomtabs from '../Components/Bottomtabs';
 import leaderboard from '../Home/components/leaderboard';
+import Catergoriesshow from '../Points/Components/Catergoriesshow';
 import RecycleGuide from '../Home/components/RecycleGuide';
 const Stack = createNativeStackNavigator();
+
 
 function Rootstack() {
     return(
@@ -20,7 +22,9 @@ function Rootstack() {
          <Stack.Screen name='RecycleGuide' component={RecycleGuide} options={{headerShown:false,
          animation:"fade_from_bottom"
         }}/> 
-       
+       <Stack.Screen name='Catergoriesshow' component={Catergoriesshow} options={{headerShown:false,
+         animation:"fade_from_bottom"
+        }}/> 
         
 
     </Stack.Navigator>

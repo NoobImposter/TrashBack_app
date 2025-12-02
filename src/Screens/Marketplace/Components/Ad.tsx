@@ -1,16 +1,18 @@
 import { View, Text,Image,Dimensions,Pressable } from 'react-native'
-import React from 'react'
+import React, { use } from 'react'
 import testresturants from "../../../Images/Points/testresturamts.png"
 import styels from '../../Components/styels';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 
 const { width: SCREEN_WIDTH } = Dimensions.get("window");
-
+import { useNavigation } from '@react-navigation/native';
 const Ad = ({item}) => {
+  const  navigation=useNavigation()
   return (
 
-    <Pressable onPress={()=>{console.log({item});
-        }}>
+    <Pressable onPress={() =>navigation.navigate('Catergoriesshow',{categoryname:item.categoryname})
+    }
+>
         <View style={{height:130,width:SCREEN_WIDTH * 0.23,
           marginRight:10,justifyContent:"center",alignItems:"center",
           flexDirection:"column",backgroundColor:"white",borderRadius:20,padding:5}}>

@@ -17,11 +17,13 @@ import SearchCard from '../Components/SearchCard'
 const PointsIndex = () => {
   const [search, setSearch] = useState('');
   const Sections = [
-  { id: '1', title: 'Categories', items: [
-    {categoryname:"Dinning",image:faUtensils},
+  { id: '1',
+    
+    title: 'Categories', items: [
+    {categoryname:"Dinning",image:faUtensils,},
     {categoryname:"Clothes",image:faShirt},
     {categoryname:"Deserts",image:faCookie},
-    {categoryname:"Liesure",image:faCouch},], component: Ad },
+    {categoryname:"Home",image:faCouch},], component: Ad },
       { id: '2', title: 'Featured', items:  [{resturnantName:"Phones",image:faMobile,Location:"Faisal Town",Discount:150},
     {resturnantName:"Books",image:faBook,Location:"Faisal Town",Discount:200},
     {resturnantName:"Phones",image:faMobile,Location:"Faisal Town",Discount:150},
@@ -40,7 +42,7 @@ const PointsIndex = () => {
   
   
   ],component: Resturants   },
-  { id: '4', title: 'Recently Viewed', items: Array.from({ length:  6}, (_, i) => i), component: Resturants },
+  
   
 ];
   const resutrants=[{resturnantName:"Books",image:faBook,Location:"Faisal Town",Discount:200},
@@ -86,35 +88,28 @@ const PointsIndex = () => {
               />
                  <FontAwesomeIcon size={25} style={{right:25,top:10}} icon={faMagnifyingGlass} />
             </View>
-             <View style={styles.rewardsCard}>
-                      <View style={{ width: "60%",flexDirection:"column" }}>
-                        <Text style={[styels.paragraphtext]}>Total Points</Text>
-                        <Text style={[styels.headertext]}>{points}</Text>
-                        <Text style={[styels.paragraphtext]}>Cash for points</Text>
-                      </View>
-                      
-                      <View style={{width:"40%",height:"100%",
-                        justifyContent:"center",alignItems:"center"
-                      }}>
-                        <Pressable onPress={()=>{Consvertpkrto(points);
-                        }}>
-                        
-                        <View style={{height:60,width:110,
-                          borderRadius:15,justifyContent:"center",backgroundColor:"#F8F8F8"}}>
-                          <Text style={[styels.headertext,{textAlign:"center"}]}>{amount}</Text>
-                        </View>
-                        </Pressable>
-                        
-
-
-                      </View>
-
-            
-                     
-                    </View>
+           
             
 
             <ScrollView style={{flex:1}} nestedScrollEnabled>
+                <View style={styles.rewardsCard}>
+                     <View style={{ width: "60%" }}>
+                                           <Text style={styles.rewardsText}>You've earned
+                                             <Text style={{color:"#3A913F"}}> 1,800</Text> points🎉</Text>
+                                         </View>
+                                       
+                                         <View style={{ width: "40%",backgroundColor:"#F8F8F8",padding:5 ,borderRadius:10}}>
+                                            <Pressable onPress={()=>{console.log("Helloz");
+                                         }}>
+                                             <Text style={[styles.rewardsText,{color:"#3A913F"}]}>Rs {amount}</Text> 
+                                               <Text style={[styles.rewardsText,]}>Earned</Text> 
+                                          </Pressable>
+                                    
+                                         </View>
+                                  
+            
+                     
+               </View>
               {
                 Sections.map((section)=>{
                   const Rendercomponent=section.component
@@ -164,7 +159,7 @@ const styles = StyleSheet.create({
   rewardsCard: {
     width: "100%",
     backgroundColor: "#CAEBC2",
-    height: "14.5%",
+    padding:15,
     borderRadius: 15,
     flexDirection: "row",
     alignItems: "center",
