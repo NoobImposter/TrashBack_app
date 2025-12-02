@@ -6,7 +6,7 @@ const Boxshow = ({arrayofdata}) => {
   return (
    <View style={styles.scheduleBox}>
           {arrayofdata.map((index,keys)=>(
-            <Boxes key={keys} texts={index.text} images={index.image}  />
+            <Boxes key={keys} texts={index.text} images={index.image}  to={index.to} />
           ))}
         </View>
   )

@@ -15,6 +15,8 @@ const Bottomtabs = () => {
       screenOptions={({ route }) => ({
         headerShown: false,
         tabBarActiveTintColor:"#606c38",
+        animation:"fade",
+        
         
         tabBarShowLabel: true,
         tabBarStyle:{

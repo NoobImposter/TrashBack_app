@@ -10,6 +10,7 @@ import recycleicon from "../../Images/Homescreen/recycleicn.png"
 import calendericon from "../../Images/Homescreen/calendericn.png"
 import styels from '../Components/styels';
 
+
 // import Boxes from './components/Boxes';
 import Boxshow from './components/Boxshow';
 
@@ -48,7 +49,9 @@ const HomeIndex = () => {
     { date: "19 Feb 2025", material: "Paper" },
     { date: "19 Feb 2025", material: "Steel" }
   ];
-  const tabdat=[{image:calendericon,text:"Leader board"},{image:recycleicon,text:"Recycle Guide"},{image:gifticon,text:"Reedeem Points"}]
+  const tabdat=[{image:calendericon,text:"Leader board",to:"leaderboard"},
+    {image:recycleicon,text:"Recycle Guide",to:"RecycleGuide"},
+    {image:gifticon,text:"Reedeem Points",to:"Points"}]
 
   return (
     <SafeAreaView style={styels.main}>
@@ -105,7 +108,7 @@ const HomeIndex = () => {
 
           <ScrollView style={{ flex: 1 }}>
             {recentsdata.map((item, index) => (
-                <Recents date={item.date} material={item.material} />
+                <Recents date={item.date} key={index} material={item.material} />
             ))}
           </ScrollView>
         </View>

@@ -1,9 +1,14 @@
 import { View, Text,Pressable,Image,StyleSheet } from 'react-native'
 import React from 'react'
 import styels from '../../Components/styels'
-const Boxes = ({images,texts}) => {
+
+import { useNavigation } from '@react-navigation/native'
+
+
+const Boxes = ({images,texts,to}) => {
+  const Navigation=useNavigation()
   return (
-    <Pressable onPress={()=>{console.log("hello");
+    <Pressable onPress={()=>{Navigation.navigate(to)
          }} style={{
            flex:1,
          alignItems:"center"
