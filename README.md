@@ -1,97 +1,159 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# ♻️ RecycleReward — Entrepreneurship Project
 
-# Getting Started
+> **Turn your trash into treasure.** RecycleReward is a mobile app that incentivizes recycling by tracking your environmental contributions and rewarding you with redeemable points.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 📌 Project Overview
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+**RecycleReward** is a sustainability-focused mobile application developed as part of an entrepreneurship initiative. The app bridges the gap between everyday recycling habits and tangible rewards — motivating users to recycle more by giving them real value in return.
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+Users can schedule trash pickups, track how much they've recycled, earn points for every kilogram submitted, and spend those points in a built-in marketplace or convert them directly into cash.
 
-```sh
-# Using npm
-npm start
+---
 
-# OR using Yarn
-yarn start
+## 🚀 Key Features
+
+- **Recycling Tracking** — Monitor your weekly and total recycling progress in real time
+- **Doorstep Pickup** — Schedule pickups for plastic, metal, and paper waste from your location
+- **Points System** — Earn points for every kilogram recycled (e.g., 2.5 kg paper = 25 pts)
+- **Marketplace** — Spend points on second-hand items like phones, books, clothes, and home décor
+- **Points-to-Cash Conversion** — Convert accumulated points into real money
+- **Leaderboard** — Compete with others and track your environmental impact
+- **Recycle Guide** — Learn what can be recycled and how
+
+---
+
+## 📱 App Screenshots
+
+### 🏠 Home Screen
+Track your points balance, weekly recycling goal, and recent activity at a glance.
+
+![Home Scr](https://github.com/user-attachments/assets/1cbd9273-b14e-4aea-a26d-ad04445a5cf1)
+een]
+
+---
+
+### ♻️ Recycle Screen
+View your total recycled weight, broken down by material type, along with your full pickup history.
+
+![Recycle Screen](https://github.com/user-attachments/assets/c56798c5-18f7-46b7-8518-1d4ce95a758a)
+
+
+---
+
+### 💰 Points Screen
+See your total points, cash conversion value, and browse featured reward categories including dining, clothes, desserts, and leisure.
+
+![Points Screen](https://github.com/user-attachments/assets/e341e214-d89f-4c27-8ffa-2fd855bafa7d)
+
+
+
+---
+
+### 🛒 Marketplace Screen
+Browse and buy second-hand items listed nearby — sorted by latest listings and categories.
+
+![Marketplace Screen] 
+![](https://github.com/user-attachments/assets/48869e7d-3fa8-4d1e-8a54-bcc50e428e68)
+
+---
+
+## 🔄 How It Works
+
+```
+User Recycles Waste
+        │
+        ▼
+Schedule a Pickup via App
+        │
+        ▼
+Collector Picks Up & Weighs Material
+        │
+        ▼
+Points Credited to User Account
+        │
+    ┌───┴───┐
+    ▼       ▼
+Spend in   Convert to
+Marketplace   Cash
 ```
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## 🧮 Points System
 
-### Android
+| Material | Rate |
+|----------|------|
+| Paper    | 10 pts / kg |
+| Plastic  | 12 pts / kg |
+| Metal    | 15 pts / kg |
 
-```sh
-# Using npm
-npm run android
+> Example: 2.5 kg of paper = **25 points**
 
-# OR using Yarn
-yarn android
-```
+Points can be redeemed in the marketplace or converted to cash at a defined exchange rate (e.g., 2000 pts = Rs. 1600).
 
-### iOS
+---
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+## 🎯 Problem Statement
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+Pakistan generates millions of tons of solid waste annually, with a large proportion being recyclable materials. However, the informal recycling sector lacks transparency, incentive structures, and technology integration. Most households have no motivation to sort or submit recyclables.
 
-```sh
-bundle install
-```
+**RecycleReward solves this by making recycling financially rewarding and effortlessly convenient.**
 
-Then, and every time you update your native dependencies, run:
+---
 
-```sh
-bundle exec pod install
-```
+## 💡 Value Proposition
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+| For Users | For the Environment |
+|-----------|---------------------|
+| Earn real rewards for recycling | Diverts waste from landfills |
+| Sell second-hand items easily | Reduces carbon footprint |
+| Convert points to cash | Promotes circular economy |
+| Track personal impact | Community-driven sustainability |
 
-```sh
-# Using npm
-npm run ios
+---
 
-# OR using Yarn
-yarn ios
-```
+## 🏙️ Target Market
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+- **Primary:** University students and young professionals (e.g., FAST-NUCES Lahore campus community)
+- **Secondary:** Residential households in urban areas
+- **Geographic Focus:** Lahore, Pakistan (initial launch)
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+---
 
-## Step 3: Modify your app
+## 🛠️ Tech Stack
 
-Now that you have successfully run the app, let's make changes!
+| Layer | Technology |
+|-------|-----------|
+| Mobile App | Flutter / React Native |
+| Backend | Node.js / Firebase |
+| Database | Firestore / PostgreSQL |
+| Authentication | Firebase Auth |
+| Maps & Pickup | Google Maps API |
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+---
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## 📈 Business Model
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+1. **Commission on Marketplace Listings** — Small fee on each sold item
+2. **B2B Recycling Partnerships** — Sell aggregated recyclables to recycling plants
+3. **Premium Subscriptions** — Priority pickup slots, bonus points multipliers
+4. **Sponsored Rewards** — Local businesses sponsor reward redemptions for brand visibility
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
+## 👨‍💻 Developed By
 
-### Now what?
+**Ali**
+Entrepreneurship Project — FAST-NUCES Lahore
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+---
 
-# Troubleshooting
+## 📄 License
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+This project is developed for educational and entrepreneurship purposes.
 
-# Learn More
+---
 
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+*"Every kilogram recycled is a step toward a cleaner Pakistan."* 🌱
