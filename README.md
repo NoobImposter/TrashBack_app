@@ -54,8 +54,7 @@ See your total points, cash conversion value, and browse featured reward categor
 ### 🛒 Marketplace Screen
 Browse and buy second-hand items listed nearby — sorted by latest listings and categories.
 
-![Marketplace Screen] 
-![](https://github.com/user-attachments/assets/48869e7d-3fa8-4d1e-8a54-bcc50e428e68)
+![Marketplace Screen](https://github.com/user-attachments/assets/48869e7d-3fa8-4d1e-8a54-bcc50e428e68)
 
 ---
 
